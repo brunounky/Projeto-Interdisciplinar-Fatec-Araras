@@ -3,7 +3,7 @@
 ## Sobre
 
 
-**[Objetivo 3 ONU - Saúde e bem estar](https://https://brasil.un.org/pt-br/sdgs/3)
+**[Objetivo 3 ONU - Saúde e bem estar](https://brasil.un.org/pt-br/sdgs/3)
 
 **De acordo com dados reais, a doença cardíaca é a doença que possui a maior taxa de mortalidade no Brasil, no site [Cardiômetro](http://www.cardiometro.com.br/) podemos verificar em tempo real como estão os números. A preocupação se dá quando a maior parte das pessoas vêm a falecer por falta de atendimento de primeiros socorros.
 
