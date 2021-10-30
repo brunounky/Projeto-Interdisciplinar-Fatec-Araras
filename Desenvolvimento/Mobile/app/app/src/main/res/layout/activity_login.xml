@@ -27,8 +27,10 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
             app:layout_goneMarginTop="80dp">
+
+
 
             <Switch
                 android:id="@+id/cSwitch"
@@ -130,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/bt_rounded_purple"
-                android:text="Cadastrar"
+                android:text="@string/new_user"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"

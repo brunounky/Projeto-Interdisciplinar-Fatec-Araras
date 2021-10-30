@@ -5,4 +5,5 @@
     <string name="password">Senha</string>
     <string name="email">Email</string>
     <string name="name">Nome</string>
+    <string name="new_user">Cadastrar</string>
 </resources>
