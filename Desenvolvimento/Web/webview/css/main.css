@@ -1,12 +1,25 @@
+:root {
+  --std-switch-color: #7480FF;
+  --std-cor-botao: #485EC4;
+  --std-input-white: #EFF1FD;
+}
+
 * {
 	margin: 0px; 
 	padding: 0px; 
 	box-sizing: border-box;
+  font-family: 'Molengo', sans-serif;
 }
 
 body, html {
 	height: 100%;
-  font-family: 'Molengo', sans-serif;
+}
+
+body {
+  background-image: url(../bg/wickedbackground.svg);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  margin: auto;
 }
 
 /*---------------------------------------------*/
@@ -14,7 +27,7 @@ a {
 	font-family: 'Molengo', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #485EC4;
+	color: var(--std-cor-botao);
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -28,7 +41,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-	color: #485EC4;
+	color: var(--std-cor-botao);
 }
 
 /*---------------------------------------------*/
@@ -40,7 +53,7 @@ p {
 	font-family: 'Molengo', sans-serif;
 	font-size: 16px;
 	line-height: 1.7;
-	color: #485EC4;
+	color: var(--std-cor-botao);
 	margin: 0px;
 }
 
@@ -50,7 +63,7 @@ ul, li {
 }
 
 /*---------------------------------------------*/
-input {
+input{
   color: whitesmoke;
 	outline: none;
 	border: none;
@@ -62,14 +75,14 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:active, input:focus {
   color: whitesmoke;
 }
 
-input::-webkit-input-placeholder { color: #8f8fa1;}
-input:-moz-placeholder { color: #8f8fa1;}
-input::-moz-placeholder { color: #8f8fa1;}
-input:-ms-input-placeholder { color: #8f8fa1;}
+input::-webkit-input-placeholder { color: #827ffe;}
+input:-moz-placeholder { color: #827ffe;}
+input::-moz-placeholder { color: #827ffe;}
+input:-ms-input-placeholder { color: #827ffe;}
 
 textarea::-webkit-input-placeholder { color: #8f8fa1;}
 textarea:-moz-placeholder { color: #8f8fa1;}
@@ -108,105 +121,64 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
-
 .limiter {
   width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 .container-login100 {
   width: 100%;  
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 1.5rem 1rem;
 }
 
 .wrap-login100 {
-  width: 390px;
-  border-radius: 50px;
   position: relative;
+  max-width: 390px;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 /*==================================================================
 [ Form ]*/
-
 .login100-form {
   width: 100%;
-}/*------------------------------------------------------------------
-[ Input ]*/
-.wrap-input100 {
-  width: 100%;
+}
+
+.lbl-input {
   position: relative;
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-
-/*---------------------------------------------*/
-.input100 {
-  font-family: 'Molengo', sans-serif;
-  color: #827ffe;
-  line-height: 1.2;
-  font-size: 14px;
-  display: block;
+  max-width: 380px;
   width: 100%;
-  background: transparent;
-  height: 62px;
-  padding: 0 20px 0 38px;
+  max-height: 58px;
+  height: 100%;
+  margin-bottom: 1.2rem;
 }
 
-/*------------------------------------------------------------------
-[ Focus Input ]*/
-.focus-input100 {
-  position: absolute;
-  display: block;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  top: -1px;
-  left: -1px;
-  pointer-events: none;
-  background-color: #7480FF;
-  border-radius: 5px;
-  opacity: 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-transform: scaleX(1.1) scaleY(1.3);
-  -moz-transform: scaleX(1.1) scaleY(1.3);
-  -ms-transform: scaleX(1.1) scaleY(1.3);
-  -o-transform: scaleX(1.1) scaleY(1.3);
-  transform: scaleX(1.1) scaleY(1.3);
+.form-input {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  background: var(--std-input-white);
+  padding: 1.2rem 1.4rem;
+  color: var(--std-cor-botao);
+  transition: .4s;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px #485EC441;
 }
 
-.input100:focus + .focus-input100 {
-  color: whitesmoke;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-
-.eff-focus-selection {
-  visibility: visible;
-  color: whitesmoke;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+.form-input:focus { background-color: var(--std-cor-botao); }
+.form-input:focus::placeholder { color: white; }
+.form-input::placeholder {
+  color: var(--std-cor-botao);
+  font-size: 1rem;
 }
 
 /*==================================================================
@@ -214,14 +186,14 @@ iframe {
 
 .input-checkbox100 {
   display: none;  
-  color: #485EC4;
+  color: var(--std-cor-botao);
 }
 
 
 .label-checkbox100 {
   font-family: 'Molengo', sans-serif;
   font-size: 16px;
-  color: #485EC4;
+  color: var(--std-cor-botao);
   line-height: 1.2;
   display: flex;
   position: relative;
@@ -233,7 +205,7 @@ iframe {
   content: "\f00c";
   font-family: 'Molengo', sans-serif;
   font-size: 16px;
-  color:  #485EC4;
+  color:  var(--std-cor-botao);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -245,7 +217,7 @@ iframe {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: 1px solid  #485EC4;
+  border: 1px solid  var(--std-cor-botao);
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -256,7 +228,7 @@ iframe {
 }
 
 .input-checkbox100:checked + .label-checkbox100::before {
-  background-color: #485EC4;
+  background-color: var(--std-cor-botao);
 }
 
 /*------------------------------------------------------------------
@@ -310,7 +282,7 @@ iframe {
   content: attr(data-validate);
   position: absolute;
   max-width: 70%;
-  border: 1px solid #485EC4;
+  border: 1px solid var(--std-cor-botao);
   border-radius: 3px;
   padding: 4px 25px 5px 10px;
   top: 50%;
@@ -323,7 +295,7 @@ iframe {
   pointer-events: none;
 
   font-family: 'Molengo', sans-serif;
-  color: #485EC4;
+  color: var(--std-cor-botao);
   font-size: 14px;
   line-height: 1.4;
   text-align: left;
@@ -342,7 +314,7 @@ iframe {
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #485EC4;
+  color: var(--std-cor-botao);
   font-size: 18px;
   top: 50%;
   -webkit-transform: translateY(-50%);
