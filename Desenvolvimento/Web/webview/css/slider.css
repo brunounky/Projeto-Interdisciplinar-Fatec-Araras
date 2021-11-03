@@ -7,14 +7,15 @@
 #toggle { /* tornando a checkbox padrão invisível */
     height: 0;
     width: 0;
+    max-width: 380px;
     display: none;
 }
 
 .switch {
     display: inline-block;
     position: relative;
-    max-width: 50%;
-    width: 100%;
+    width: 50%;
+    max-width: 200px;
     height: 50px;
     background-color: var(--std-main-color);
     border-radius: 50px;
@@ -62,8 +63,8 @@
 }
 
 #toggle:checked ~ .slider::before {
-    width: 4.8rem; /* ajuste de largura manual do botão no segundo estado */
-    transform: translateX(7.4rem); /* movimenta o botão */
+    width: 4.9rem; /* ajuste de largura manual do botão no segundo estado */
+    transform: translateX(7.25rem); /* movimenta o botão */
 }
 
 #toggle:checked ~ .text.log { color: var(--std-main-color); } /* quando Login estiver ativado, fica com texto da cor do fundo */
