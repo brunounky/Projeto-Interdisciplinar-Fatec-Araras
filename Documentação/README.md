@@ -36,3 +36,6 @@ Além da leitura de dados, será possível filtrar e emitir um alerta em um raio
 * PHP
 * HTML
 * CSS
+
+## Link para documentação completa
+https://docs.google.com/document/d/1wSFyC2_sqqXckaBcyrEbbpq9Ifsyq7CjvmX_rBFFnFg/edit
