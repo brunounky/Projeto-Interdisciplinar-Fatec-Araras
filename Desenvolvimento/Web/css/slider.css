@@ -14,7 +14,7 @@
 .switch {
     display: inline-block;
     position: relative;
-    width: 50%;
+    min-width: 200px;
     max-width: 200px;
     height: 50px;
     background-color: var(--std-main-color);
