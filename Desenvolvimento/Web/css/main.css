@@ -373,6 +373,13 @@ iframe {
   justify-content: space-around;
 }
 
+.icons{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #485EC441;
+}
+
 #voluntary{
 margin: auto;
 font-size: 14pt;
