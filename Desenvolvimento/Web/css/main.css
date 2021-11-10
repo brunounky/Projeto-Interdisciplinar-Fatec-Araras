@@ -154,14 +154,24 @@ iframe {
 }
 
 .lbl-input {
-  margin: auto;
   position: relative;
   max-width: 380px;
-  min-width: 200px;
   width: 100%;
   max-height: 58px;
   height: 100%;
   margin-bottom: 1.2rem;
+  transition: max-height .4s, opacity .4s;
+}
+
+.lbl-input[for="input-nome"].toggle-login {
+  max-height: 0;
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.lbl-input[for="input-pwd-confirm"].toggle-login {
+  max-height: 0;
+  opacity: 0;
 }
 
 .form-input {
@@ -323,7 +333,7 @@ iframe {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: FontAwesome;
+  font-family: 'Molengo', sans-serif;
   display: block;
   position: absolute;
   color: var(--std-cor-botao);
@@ -340,6 +350,41 @@ iframe {
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
+}
+
+.contact100-form-checkbox{
+  margin: auto;
+  display: flex;
+  color: #485EC4;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Molengo', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#apps{
+  margin: auto;
+  display: flex;
+  width: 50%;
+  max-width: 380px;
+  justify-content: space-around;
+}
+
+.icons{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #485EC441;
+}
+
+#voluntary{
+margin: auto;
+font-size: 14pt;
+text-align: center;
+font-family: 'Molengo', sans-serif;
 }
 
 @media (max-width: 992px) {
