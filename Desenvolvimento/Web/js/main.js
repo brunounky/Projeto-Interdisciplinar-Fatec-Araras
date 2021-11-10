@@ -2,7 +2,6 @@
 (function ($) {
     "use strict";
 
-
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -51,6 +50,21 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
+
+    document.getElementById("toggle").addEventListener("click", hideValidate, true);
+
+    function hideValidate() {
+        const toggleState = document.getElementById("toggle").checked;
+        const nome = document.getElementById("input-nome").parentElement;
+        const pwd = document.getElementById("input-pwd-confirm").parentElement;
+
+        if(toggleState) {
+            nome.classList.toggle("toggle-login");
+            pwd.classList.toggle("toggle-login");
+        } else {
+            nome.classList.toggle("toggle-login");
+            pwd.classList.toggle("toggle-login");
+        }
+    }
 
 })(jQuery);
