@@ -49,6 +49,21 @@
     margin: 0px;
   }
 
+  #register{
+    color: #485EC4;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .adictional-informations{
+    text-align: center;
+    font-size: 18px;
+    color: #485EC4;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
   p {
     font-family: 'Molengo', sans-serif;
     font-size: 16px;
@@ -187,7 +202,7 @@
   }
 
   .form-input:focus { background-color: var(--std-switch-color); }
-  .form-input:focus::placeholder { color: rgb(158, 149, 149); }
+  .form-input:focus::placeholder { color: rgb(253, 253, 253); }
   .form-input::placeholder {
     color: var(--std-cor-botao);
     font-size: 1rem;
@@ -380,13 +395,6 @@
     box-shadow: 0 0 8px #485EC441;
   }
 
-  .adictional-informations{
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-
   .contact100-form-checkbox{
     margin: auto;
     border-radius: 0px 0px 10px 10px;
@@ -402,6 +410,8 @@
     justify-content: space-around;
     margin-top: 0px;
   }
+  
+  /* Tela 3 - Adicionar plano de saúde */
 
   #health-insurance{
     margin: auto;
@@ -413,15 +423,14 @@
     height: 50px;
     color: whitesmoke;
     background-color: #485EC4;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
     box-shadow: 0 0 8px #485EC441;
   }
-
 
   .contact100-form-checkbox2{
     margin: auto;
     background-color: whitesmoke;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 6px 6px;
     display: flex;
     color: #485EC4;
     margin-top: 20px;
@@ -442,6 +451,61 @@
   text-align: center;
   font-family: 'Molengo', sans-serif;
   }
+
+   button[name="drop"]{
+    margin: auto;
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Molengo', sans-serif;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: -15%;
+    max-width: 300px;
+    line-height: 50px;
+    height: 50px;
+    color: #827ffe;
+    background-color: #EFF1FD;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #485EC441;
+  }
+
+  .drop-content{
+    margin: auto;
+    display: none;
+    background-color: #EFF1FD;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: -15%;
+    margin-top: -5px;
+    max-width: 300px;
+}
+
+.drop-content a{
+  color: #827ffe;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14pt;
+  font-family: 'Molengo', sans-serif;
+}
+
+.menu-drop:hover .drop-content{
+  display: block;
+} 
+
+.menu-drop:focus button[name="drop"]{
+  background-color: #EFF1FD
+}
+
+.drop-content a:focus{
+  background-color: #827ffe;
+  color: whitesmoke;
+}
+
+.login100-form-btn{
+  margin-top: 16px;
+}
 
   @media (max-width: 992px) {
     .alert-validate::before {

@@ -1,5 +1,5 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +19,15 @@
             <link rel="stylesheet" type="text/css" href="css/util.css">
         <!--===============================================================================================-->
             <link rel="stylesheet" type="text/css" href="css/main.css">
-
+ 
         <title>SoSCardio</title>
     </head>
     <body>
         <div class="limiter"> 
-
             <div class="container-login100">
-                <label for="toggle" class="switch">
-                    <input type="checkbox" name="checker" id="toggle">
-                    <span class="text cad">Cadastrar</span>
-                    <span class="text log">Login</span>
-                    <span class="slider round"></span>
-                </label> 
                 <div class="wrap-login100">
-                    <form class="login100-form validate-info">
+                    <form class="login100-form validate-info">                
+                        <h1 id="register">Cadastrar</h1> 
                         <p class="adictional-informations">Informações complementares</p>
                         <p id="health-insurance">Possui Plano de Saude?</p>
                         <div class="contact100-form-checkbox2">
@@ -56,18 +50,24 @@
                                 
                             </div>
                             </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
-                                  Plano de Saúde
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                  <li><a class="dropdown-item active" href="#">Amil</a></li>
-                                  <li><a class="dropdown-item" href="#">Bradesco</a></li>
-                                  <li><a class="dropdown-item" href="#">São Luiz</a></li>
-                                  <li><a class="dropdown-item" href="#">Unimed</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                </ul>
+                            <div class="menu-drop">
+                                <button type="button" name="drop">Plano de Saúde</button>
+                                <div class="drop-content">
+                                    <a href="#">Allianz</a>
+                                    <a href="#">Amil</a>
+                                    <a href="#">Bradesco Saúde</a><a href="#">Caixa Saúde</a>     
+                                    <a href="#">Golden Cross</a>
+                                    <a href="#">Quality</a>
+                                    <a href="#">Nossa Saúde</a>
+                                    <a href="#">NotreDame Intermédica</a>
+                                    <a href="#">Porto Seguro</a>
+                                    <a href="#">Santa Helena</a>
+                                    <a href="#">São Cristóvão</a>
+                                    <a href="#">SulAmérica</a>
+                                    <a href="#">São Francisco</a>
+                                    <a href="#">São Luiz</a>
+                                    <a href="#">Unimed</a>
+                                </div>
                               </div>
                             <div class="container-login100-form-btn m-t-17">
                                 
@@ -79,9 +79,5 @@
                 </div>
             </div>
         </div>
-
-        <div id="dropDownSelect1"></div>
-    <!--===============================================================================================-->
-        <script src="js/main.js"></script>
     </body>
-    </html>
+</html>

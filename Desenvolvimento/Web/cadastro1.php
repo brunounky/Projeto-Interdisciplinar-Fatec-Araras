@@ -41,19 +41,19 @@
                         </label>
             
                         <label for="input-phone" class="lbl-input">
-                            <input id="input-phone" class="form-input phone" type="number" placeholder="Telefone" required />
+                            <input id="input-phone" class="form-input phone" type="text" placeholder="Telefone" required />
                         </label>
                         
                         <label for="input-age" class="lbl-input">
-                            <input id="input-input-age" class="form-input input-age" type="number" placeholder="Idade" required />
+                            <input id="input-input-age" class="form-input input-age" type="text" placeholder="Idade" required />
                         </label>
 
                         <label for="input-weigth" class="lbl-input">
-                            <input id="input-weigth" class="form-input weigth" type="number" placeholder="Peso" required />
+                            <input id="input-weigth" class="form-input weigth" type="text" placeholder="Peso" required />
                         </label>
                         
                         <label for="input-age" class="lbl-input">
-                            <input id="input-input-age" class="form-input input-age" type="number" placeholder="Altura" required />
+                            <input id="input-input-age" class="form-input input-age" type="text" placeholder="Altura" required />
                         </label>
                         </div>
 
