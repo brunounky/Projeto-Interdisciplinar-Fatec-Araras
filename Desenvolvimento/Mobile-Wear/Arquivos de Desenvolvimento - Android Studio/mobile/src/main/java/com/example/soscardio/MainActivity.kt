@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val myWebView: WebView = findViewById(R.id.webviewlogin)
-        myWebView.loadUrl("https://10.0.0.181/")
+        myWebView.loadUrl("http://10.0.0.181/index.php")
 
     }
 }
