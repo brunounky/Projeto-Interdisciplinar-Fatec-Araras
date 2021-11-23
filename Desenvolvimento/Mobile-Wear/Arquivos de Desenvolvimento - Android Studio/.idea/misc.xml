@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/bruno/Documents/Github/Projeto-Interdisciplinar-Fatec-Araras/Desenvolvimento/Mobile-Wear/Arquivos de Desenvolvimento - Android Studio/mobile/src/main/res/layout/activity_main.xml" value="0.21875" />
+        <entry key="..\:/Users/bruno/Documents/Github/Projeto-Interdisciplinar-Fatec-Araras/Desenvolvimento/Mobile-Wear/Arquivos de Desenvolvimento - Android Studio/mobile/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/bruno/Documents/Github/Projeto-Interdisciplinar-Fatec-Araras/Desenvolvimento/Wear/Arquivos Desenvolvimento Wear - Android Studio/mobile/src/main/res/layout/activity_main.xml" value="0.2164855072463768" />
+        <entry key="..\:/Users/bruno/Documents/Github/Projeto-Interdisciplinar-Fatec-Araras/Desenvolvimento/Wear/Arquivos Desenvolvimento Wear - Android Studio/wear/src/main/res/layout/activity_main.xml" value="0.7861842105263158" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
