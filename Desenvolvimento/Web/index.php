@@ -28,8 +28,17 @@
 
 $pdo=new PDO("mysql:host=localhost;dbname=soscardio","root");
 
+$recuperaDados = array(
+    PDO:"nome" => "nome",
+    "email" => "email",
+    "senha" => "senha",
+    "cpf" => "cpf",
+);
+
+//$getRecuperaDados('id','nome','email','senha','cpf','endereco','telefone','idade','peso','altura');
+
 if(isset($_POST['nome'])){
-    $sql = $pdo->prepare("INSERT INTO logininicial VALUES (null,?,?,?)");
+    $sql = $pdo->prepare("INSERT INTO logininicial VALUES ($recuperaDados)");
     $sql->execute(array($_POST['nome'], $_POST['email'], $_POST['senha']));
 
     $idescolha = $_POST['inlineRadioOptions'];

@@ -23,6 +23,19 @@
         <title>SoSCardio</title>
     </head>
     <body>
+    <?php
+
+$pdo=new PDO("mysql:host=localhost;dbname=soscardio","root");
+
+if(isset($_POST[$getRecuperaDados[]])){
+    $sql = $pdo->prepare("INSERT INTO logininicial VALUES (id,)");
+    $sql->execute(array($_POST['nome'], $_POST['email'], $_POST['senha']));
+
+    }
+
+}
+
+?>
         <div class="limiter"> 
             <div class="container-login100">
                 <div class="wrap-login100">

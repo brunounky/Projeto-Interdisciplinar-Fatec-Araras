@@ -21,24 +21,47 @@
         <title>SoSCardio</title>
     </head>
     <body>
+
+    <?php
+if(isset($_POST['cpf'])){
+    // ordem das colunas do banco de dados: (id, nome, email, senha, cpf, endereco, telefone, idade, peso, altura, profissao, experiencie, grau exp, comorbidade, atv. fisica, info., conv. medico, tipo conv.)
+    $sql = $pdo->prepare("INSERT INTO logininicial VALUES (null, null, null,null,?,?,?,?,?,?)");
+    $sql->execute(array($_POST['cpf'], $_POST['endereco'], $_POST['telefone'], $_POST['idade'], $_POST['peso'], $_POST['altura']));
+
+     header('Location:cadastro-plano-saude.php');
+}
+?>
+
         <div class="limiter"> 
+
             <div class="container-login100">
                 <div class="wrap-login100">
+                    <h1 id="register">Cadastrar</h1>
+                    <p class="adictional-informations">Informações complementares</p>
                     <form class="login100-form validate-form">
-                        <h1 id="register">Cadastrar</h1>
-                        <p class="adictional-informations">Informações complementares</p>
-                        <label for="input-health" class="lbl-input">
-                            <input id="input-health" class="form-input input-health" type="text" placeholder="Possui alguma comorbidade?" required />
+                        <label for="input-cpf" class="lbl-input">
+                            <input id="input-cpf" class="form-input cpf" type="text" placeholder="CPF" required />
                         </label>
                         
-                        <label for="input-activity" class="lbl-input">
-                            <input id="input-activity" class="form-input input-activity" type="text" placeholder="Pratica atividade física?" required />
+                        <label for="input-endereco" class="lbl-input">
+                            <input id="input-endereco" class="form-input endereco" type="text" placeholder="Endereço" required />
                         </label>
             
-                        <label for="input-adictional-info" class="lbl-input">
-                            <input id="input-adictional-info" class="form-input adictional-info" type="text" placeholder="Informações adicionais" required />
+                        <label for="input-phone" class="lbl-input">
+                            <input id="input-phone" class="form-input phone" type="text" placeholder="Telefone" required />
                         </label>
                         
+                        <label for="input-age" class="lbl-input">
+                            <input id="input-input-age" class="form-input input-age" type="text" placeholder="Idade" required />
+                        </label>
+
+                        <label for="input-weigth" class="lbl-input">
+                            <input id="input-weigth" class="form-input weigth" type="text" placeholder="Peso" required />
+                        </label>
+                        
+                        <label for="input-age" class="lbl-input">
+                            <input id="input-input-age" class="form-input input-age" type="text" placeholder="Altura" required />
+                        </label>
                         </div>
 
                             <div class="container-login100-form-btn m-t-17">
